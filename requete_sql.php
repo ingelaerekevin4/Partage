@@ -9,8 +9,9 @@
 <body>
     <h1>Liste des auteurs</h1>
     <?php
+    *// Commenter
     $connexion =new PDO ('mysql:host=localhost; dbname=bibliothèque; charset=utf8', 'root', 'Admin@99');
-    $nom=$_POST["nom"];
+    $nom = htmlspecialchars($_POST["nom"]);
     $Prenom=$_POST["prenom"];
     $Jour=$_POST["datedenaissance"];
     $Nationalite=$_POST["nationalité"];
