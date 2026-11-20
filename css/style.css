@@ -7,3 +7,10 @@ table {
     border: 10;
     text-align : center;
 }
+
+.test {
+    background-color: aquamarine;
+    text-align : center;
+    margin : 100px auto; 
+    
+}
