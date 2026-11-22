@@ -9,13 +9,13 @@
 <body>
     <h1>Liste des auteurs</h1>
     <?php
-    *// Commenter
+    // Commenter
     $connexion =new PDO ('mysql:host=localhost; dbname=bibliothèque; charset=utf8', 'root', 'Admin@99');
     $nom = htmlspecialchars($_POST["nom"]);
     $Prenom=$_POST["prenom"];
     $Jour=$_POST["datedenaissance"];
     $Nationalite=$_POST["nationalité"];
-    if (empty($nom) || empty($Prenom) ...) {
+    if (empty($nom) || empty($Prenom) || empty($datedenaissance) || empty($nationalité)) {
         echo ("Veuillez rempmir tous lesc champs !!")
     }
     $requete=$connexion->prepare("INSERT INTO auteur (nom,prenom,date_naissance,nationalité) VALUES(?,?,?,?)");
