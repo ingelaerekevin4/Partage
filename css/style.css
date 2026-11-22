@@ -1,16 +1,10 @@
 h1{
     text-align: center;
     background-color: aqua;
+    margin : 100px auto;
 }
 
 table {
     border: 10;
     text-align : center;
-}
-
-.test {
-    background-color: aquamarine;
-    text-align : center;
-    margin : 100px auto; 
-    
 }
